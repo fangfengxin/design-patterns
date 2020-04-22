@@ -13,7 +13,7 @@ public abstract class CondimentDecorator extends Beverage {
      * 获取描述
      * 所有调料装饰者都必须重新实现getDescription()方法
      *
-     * @return
+     * @return 饮料描述
      */
     @Override
     public abstract String getDescription();
