@@ -11,7 +11,7 @@ public abstract class PizzaStore {
      * @param item
      * @return
      */
-    abstract Pizza createPizza(String item);
+    protected abstract Pizza createPizza(String item);
 
     /**
      * 所有子类使用PizzaStore类定义的orderPizza()方法，声明为final防止被子类覆盖。
