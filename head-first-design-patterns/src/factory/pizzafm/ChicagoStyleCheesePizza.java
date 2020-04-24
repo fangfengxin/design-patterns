@@ -2,7 +2,7 @@ package factory.pizzafm;
 
 public class ChicagoStyleCheesePizza extends Pizza {
 
-	public ChicagoStyleCheesePizza() { 
+	public ChicagoStyleCheesePizza() {
 		name = "Chicago Style Deep Dish Cheese Pizza";
 		dough = "Extra Thick Crust Dough";
 		sauce = "Plum Tomato Sauce";
@@ -10,7 +10,8 @@ public class ChicagoStyleCheesePizza extends Pizza {
 		toppings.add("Shredded Mozzarella Cheese");
 	}
  
-	void cut() {
+	@Override
+    void cut() {
 		System.out.println("Cutting the pizza into square slices");
 	}
 }

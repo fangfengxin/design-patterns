@@ -5,6 +5,12 @@ package factory.pizzafm;
  * @Date 2020/4/24 17:53
  */
 public abstract class PizzaStore {
+    /**
+     * 制作披萨
+     *
+     * @param item
+     * @return
+     */
     abstract Pizza createPizza(String item);
 
     public Pizza orderPizza(String type) {
