@@ -6,8 +6,8 @@ package factory.pizzafm;
  */
 public class PizzaTestDrive {
     public static void main(String[] args) {
-        NYPizzaStore nyPizzaStore = new NYPizzaStore();
-        ChicagoPizzaStore chicagoPizzaStore = new ChicagoPizzaStore();
+        PizzaStore nyPizzaStore = new NYPizzaStore();
+        PizzaStore chicagoPizzaStore = new ChicagoPizzaStore();
 
         Pizza pizza = nyPizzaStore.orderPizza("cheese");
         System.out.println("Flexia ordered a " + pizza.getName() + "\n");
