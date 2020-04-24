@@ -13,7 +13,13 @@ public abstract class PizzaStore {
      */
     abstract Pizza createPizza(String item);
 
-    public Pizza orderPizza(String type) {
+    /**
+     * 所有子类使用PizzaStore类定义的orderPizza()方法，声明为final防止被子类覆盖。
+     *
+     * @param type
+     * @return
+     */
+    public final Pizza orderPizza(String type) {
         Pizza pizza = createPizza(type);
         System.out.println("--- Making a " + pizza.getName() + " ---");
         pizza.prepare();
