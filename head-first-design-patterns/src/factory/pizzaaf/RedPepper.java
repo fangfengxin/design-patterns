@@ -1,0 +1,11 @@
+package factory.pizzaaf;
+
+/**
+ * @author fengxin.fang
+ */
+public class RedPepper implements Veggies {
+	@Override
+	public String toString() {
+		return "Red Pepper";
+	}
+}
