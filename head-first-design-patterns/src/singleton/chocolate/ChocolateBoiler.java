@@ -16,8 +16,12 @@ public class ChocolateBoiler {
 
     public static ChocolateBoiler getInstance() {
         if (uniqueInstance == null) {
-            System.out.println("Creating unique instance of chocolate boiler");
-            uniqueInstance = new ChocolateBoiler();
+            synchronized (ChocolateBoiler.class) {
+                if (uniqueInstance == null) {
+                    System.out.println("Creating unique instance of chocolate boiler");
+                    uniqueInstance = new ChocolateBoiler();
+                }
+            }
         }
         System.out.println("Returning instance of chocolate boiler");
         return uniqueInstance;
