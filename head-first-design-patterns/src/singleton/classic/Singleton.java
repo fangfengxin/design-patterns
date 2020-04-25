@@ -17,7 +17,8 @@ public class Singleton {
     }
 
     /**
-     * 获取实例对象
+     * 获取实例对象。
+     * 这里的方法体会有一些多线程安全问题。
      */
     public static Singleton getInstance() {
         if (uniqueInstance == null) {
