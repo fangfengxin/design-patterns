@@ -4,7 +4,7 @@ package command.simpleremote;
  * @Author hustffx
  * @Date 2020/4/28 16:10
  */
-public class SimpleRemoteControlTest {
+public class SimpleRemoteLoader {
     public static void main(String[] args) {
         SimpleRemoteControl remote = new SimpleRemoteControl();
 
