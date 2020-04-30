@@ -1,8 +1,8 @@
 package command.party;
 
-//
-// This is the invoker
-//
+/**
+ * @author fengxin.fang
+ */
 public class RemoteControl {
     Command[] onCommands;
     Command[] offCommands;
