@@ -1,4 +1,6 @@
-package facade.hometheater;
+package facade.test;
+
+import facade.hometheater.*;
 
 /**
  * @Author hustffx
