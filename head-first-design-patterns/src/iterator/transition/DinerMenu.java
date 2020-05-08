@@ -1,4 +1,4 @@
-package iterator.dinermergercafe;
+package iterator.transition;
 
 import java.util.Iterator;
 
@@ -57,6 +57,6 @@ public class DinerMenu implements Menu {
 
     @Override
     public Iterator<MenuItem> iterator() {
-        return new AlternatingDinerMenuIterator(menuItems);
+        return new DinerMenuIterator(menuItems);
     }
 }
