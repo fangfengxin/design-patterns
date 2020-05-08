@@ -1,0 +1,33 @@
+package composite.menuiterator;
+
+import java.util.Iterator;
+
+/**
+ * @author hustffx
+ * @date 2020/5/8 12:38
+ */
+public class Waitress {
+    MenuComponent allMenus;
+
+    public Waitress(MenuComponent allMenus) {
+        this.allMenus = allMenus;
+    }
+
+    public void printMenu() {
+        allMenus.print();
+    }
+
+    public void printVegetarianMenu() {
+        Iterator<MenuComponent> iterator = allMenus.iterator();
+        System.out.println("\nVEGETARIAN MENU\n---------------");
+        while (iterator.hasNext()) {
+            MenuComponent menuComponent = iterator.next();
+            try {
+                if (menuComponent.isVegetarian()) {
+                    menuComponent.print();
+                }
+            } catch (UnsupportedOperationException ignored) {
+            }
+        }
+    }
+}
