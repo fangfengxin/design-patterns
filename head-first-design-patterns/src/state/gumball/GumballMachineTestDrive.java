@@ -4,7 +4,7 @@ package state.gumball;
  * @Author hustffx
  * @Date 2020/5/8 15:59
  */
-class GumballMachineTest {
+class GumballMachineTestDrive {
     public static void main(String[] args) {
         GumballMachine gumballMachine = new GumballMachine(5);
 
